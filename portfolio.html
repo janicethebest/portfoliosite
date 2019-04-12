@@ -1,0 +1,127 @@
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+<style>
+</style>
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+<div class="longline"></div>
+<div class="longline2"></div>
+<div class="longline3"></div>
+<div class="longline4"></div>
+<div class="artist"><span class="p-3-r"> Vlastislav</span><br/><span class="p-3-l">&nbsp;&nbsp;&nbsp;Hofman</span> </div>
+<header>
+ <div id="navbar">
+ <a href="index.html">Home</a>
+ <a href="portfolio.html">Portfolio</a>
+  <a href="bibilography.html">Bilbliography</a>
+ <a href="gallery.html">Purchase</a>
+  <a href="referrence.html">References</a>
+    </div> 
+</header>
+    
+    <main>
+        <div class="img">
+    <img src="image/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-30%20%E4%B8%8B%E5%8D%885.25.53.png" ><div class="layer">
+    <div class="text">A set of teapot produced in 1911-1912, by Vlastislav Hofman.</div>
+  </div>
+  </div>
+    <div class="img">
+    <img src="image/img_7687.png" alt="ceramic">
+        <div class="layer">
+    <div class="text">A set of Vase produced in 1914 Česká republika, by Vlastislav Hofman</div>
+  </div>
+    </div>
+     <div class="img"><img src="image/4a0012e5-ffd8-4016-aeef-f87481074fd5_570.jpg" ><div class="layer">
+    <div class="text">The "Alban Berg: Vojcek-U Rybnika - Moonlit Pond was painted by Vlastislav Hofman, in 1923</div>
+  </div></div>
+  <div class="img"><img src="image/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-30%20%E4%B8%8B%E5%8D%885.26.23.png" >
+        <div class="layer">
+    <div class="text">A set of Vase produced in 1914 Česká republika, by Vlastislav Hofman </div>
+  </div></div> 
+<div class="img">
+    <img src="image/ce6356a36d46c2e5f91512d026bf13b3.jpg"><div class="layer">
+    <div class="text">"Circa 1930" A chair, and home decor design by Vlastislav Hofman</div>
+  </div>
+  </div>
+<div class="img">
+    <img src="image/mainimg_7615.png" ><div class="layer">
+    <div class="text">A set of Vase produced in 1911 Česká republika, by Vlastislav Hofman</div>
+  </div>
+  </div>
+  <div class="img"><img src="image/picture_13829_2.jpg-389x310-vlastislav-hofman-novy-princip-v-architekture.jpg" ><div class="layer">
+    <div class="text">Vlastislav Hofman: Nový princip v architektuře in 1913</div>
+  </div></div>
+<div class="img"><img src="image/ARCH-34A.jpg" ><div class="layer">
+    <div class="text">Vlastislav Hofman a F. Mencl: Krematorium V Mor. Ostrave</div>
+  </div></div>
+<div class="img"><img src="image/1600px-Vlastislav_Hofman_-_Elevation_Design_for_a_Sitting_Room_with_Sofa,_Two_Chairs,_and_Table_-_Google_Art_Project.jpg" ><div class="layer">
+    <div class="text">Elevation design for a sitting room with sofa, two chairs, and table</div>
+  </div></div>
+
+        
+    </main>   
+    
+<footer>
+      <div class="copyright">Copyright &copy; reserved by Janice Chen.</div>
+</footer>
+<script>
+    jQuery(document).ready(function($){
+	$(window).scroll(function() {
+    	if ($(this).scrollTop() >= 800) {          // If page is scrolled more than 800px
+        	$('#return-to-top').fadeIn('slow');    // Fade in the arrow
+    	} else {
+        	$('#return-to-top').fadeOut('slow');           // Else fade out the arrow
+    }
+	});
+	$('#return-to-top').click(function() {                 // When arrow is clicked
+    	$('body,html').animate({ scrollTop : 0 }, 800);   // Scroll to top of body                 
+    	return false;
+	});
+});     
+</script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar=document.getElementById("navbar");
+        var sticky = navbar.offsetTop; 
+        function myFunction(){
+            if (window.pageYOffset >= sticky){
+                navbar.classList.add ("sticky")
+            } else { 
+            navbar.classList.remove("sticky");
+            }
+        }
+       </script> 
+<script>var $imgs = $('img');
+
+$imgs.on('click', function(){
+  var src = $(this).attr('src');
+  
+  var $modalContainer = $('<div />', {
+    'class': 'modalContainer'
+  }).appendTo('body').hide().fadeIn(500);
+  
+  var $modalImg = $('<img />', {}).attr('src', src).appendTo($modalContainer);
+  
+  $modalContainer.on('click', function(){
+    $(this).fadeOut(500, function(){
+      $(this).remove();
+    });
+  })
+  
+});</script>
+</body>
+</html>
